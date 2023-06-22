@@ -15,7 +15,7 @@ export default defineConfig({
             formats: ['es'],
             fileName: 'component-library'
         },
-        minify: true,
+        minify: false,
         rollupOptions: {external: externalDependencies},
         outDir: resolve(__dirname, 'dist'),
         emptyOutDir: false
