@@ -17,7 +17,7 @@ window.initiateIdVerification = function() {
             onIdVerificationClose:() => console.log('onfido close'),
             onIdVerificationError:() => console.log('onfido error'),
             userDetails:{firstName: 'firstName', lastName: 'lastName', residencyCountry: 'US'}
-        }).mount('#container');
+        }, document.getElementById('container'));
     }
 }
 
