@@ -6,4 +6,5 @@ The `host-app` (uses webpack) consumes this package.
 
 Do the below for initial setup and make the app running
 1) Run `npm i` on both projects
-2) In `host-app` do `npm run dev`
+2) Run `npm run build` in component-library
+3) In `host-app` do `npm run dev`
