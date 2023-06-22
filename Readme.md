@@ -7,7 +7,7 @@ The `host-app` (uses webpack) consumes this package.
 Do the below for initial setup and make the app running
 1) Run `npm i` on both projects
 2) Run `npm run build` in `component-library`
-3) In `host-app` do `npm run dev`
+3) Run `npm run dev` in `host-app`
 
 You should see a `Initiate ID verification` button. The button triggers fetching the onfido sdk 
 and initializing it. But this essentially silently breaks the UI and the sdk does not get rendered.
