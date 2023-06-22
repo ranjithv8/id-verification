@@ -2,7 +2,7 @@ import type { SdkHandle } from 'onfido-sdk-ui';
 import {useEffect, useState} from 'preact/hooks';
 
 import { useIdVerificationToken } from './useIdVerificationToken';
-import { IdVerificationProps } from '../types';
+import { IdVerificationProps } from './types';
 
 const containerId = 'adyen-kyc-id-verification';
 const initOnfido = async ({

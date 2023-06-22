@@ -1,4 +1,4 @@
-import IdVerificationComponent from "./IdVerification/component/IdVerificationComponent";
+import IdVerificationComponent from "./IdVerification/IdVerificationComponent";
 
 /**
  * Maps each component with a Component element.
@@ -6,5 +6,3 @@ import IdVerificationComponent from "./IdVerification/component/IdVerificationCo
 export const componentsMap = {
     IdVerification: IdVerificationComponent
 } as const;
-
-export default componentsMap;

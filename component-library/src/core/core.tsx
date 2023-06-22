@@ -1,13 +1,10 @@
-import { componentsMap } from '../components';
+import {componentsMap} from '../components/componentsMap';
 import {render} from "preact";
-import IdVerificationComponent from "../components/IdVerification/component/IdVerificationComponent";
 
-class Core {
-    public create = (componentName: keyof typeof componentsMap, options: any, mountPoint: HTMLElement)=> {
+export class Core {
+    public create = (componentName: keyof typeof componentsMap, options: any, mountPoint: HTMLElement) => {
         const Component = componentsMap[componentName];
 
         render(<Component {...options} />, mountPoint)
     };
 }
-
-export default Core;

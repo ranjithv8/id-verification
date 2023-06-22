@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
 
-import { UserDetails } from '../types';
+import { UserDetails } from './types';
 
 export const useIdVerificationToken = ({
     userDetails,

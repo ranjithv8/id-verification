@@ -1,8 +1,8 @@
 let instance;
 async function init() {
     try {
-        const componentLib = await import(/* webpackMode: "lazy" */'component-library');
-        instance = new componentLib.default();
+        const { Core: ComponentLibrary } = await import(/* webpackMode: "lazy" */'component-library');
+        instance = new ComponentLibrary;
     } catch (e) {
         console.log(e);
     }
